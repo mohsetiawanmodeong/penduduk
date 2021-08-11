@@ -20,20 +20,20 @@
 	include '../koneksi.php';
 	?>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success mb-4">
 		<div class="container">
 			
-			<a class="navbar-brand" href="#">S.I Pendataan Penduduk</a>
+			<a class="navbar-brand" href="index.php">S.I Pendataan Penduduk</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.php"><i class="fa fa-home"></i> Dashboard <span class="sr-only">(current)</span></a>
+					<li <?php if($page == "Dashboard") echo "class='nav-item active'";?>>
+						<a class="nav-link" href="index.php"><i class="fa fa-home"></i> Dashboard</span></a>
 					</li>
-					<li class="nav-item">
+					<li <?php if($page == "Data Warga") echo "class='nav-item active'";?>>
 						<a class="nav-link" href="warga.php"><i class="fa fa-users"></i> Data Warga</a>
 					</li>
 					<li class="nav-item dropdown">
@@ -45,13 +45,13 @@
 							<a class="dropdown-item" href="dusun.php">Data Dusun</a>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li <?php if($page == "Ganti Password") echo "class='nav-item active'";?>>
 						<a class="nav-link" href="ganti_password.php"><i class="fa fa-lock"></i> Ganti Password</a>
 					</li>
 				</ul>
 
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
 					</li>
 				</ul>

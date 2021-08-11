@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+$page == "Dashboard";
 ?>
 
 <div class="container">
@@ -8,13 +9,22 @@ include 'header.php';
 		<div class="card-body">
 
 			<h3>Dashboard</h3>
+			<!-- <p class="text-muted text-center">Selamat Datang<b>
 			<?php 
+			/*$admin = mysqli_query($koneksi,"SELECT nama FROM admin WHERE id = 1");
+			foreach($admin as $a){
+				echo $a['nama'];
+			}*/
+			?>
+			</b>
+			</p> -->
+			<?php
 			$admin = mysqli_query($koneksi,"SELECT nama FROM admin WHERE id = 1");
 			while($a = mysqli_fetch_array($admin)){
 			?>
-			<p class="text-muted">Selamat Datang <b><?php echo $a['nama']; ?></b></p>
+			<p class="text-muted text-center">Selamat Datang <b><?php echo $a['nama']; ?></b></p>
 			<?php 
-			} 
+				} 
 			?>
 			<hr>
 

@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+$page == "Data Warga";
 ?>
 
 <div class="container-fluid">

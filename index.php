@@ -55,7 +55,7 @@
 								<input type="password" name="pass" required="required" class="form-control" placeholder="Masukkan Password ...">
 							</div>
 
-							<input type="submit" name="submit" value="Login" class="btn btn-primary btn-block mb-3">
+							<input type="submit" name="submit" value="Login" class="btn btn-success btn-block mb-3">
 
 						</form>
 

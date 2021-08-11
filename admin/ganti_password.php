@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+$page == "Ganti Password";
 ?>
 
 <div class="container">

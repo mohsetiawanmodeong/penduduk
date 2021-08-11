@@ -8,8 +8,14 @@ include 'header.php';
 		<div class="card-body">
 
 			<h3>Dashboard</h3>
-			<p class="text-muted">Halaman Dashboard Admin</p>
-
+			<?php 
+			$admin = mysqli_query($koneksi,"SELECT nama FROM admin WHERE id = 1");
+			while($a = mysqli_fetch_array($admin)){
+			?>
+			<p class="text-muted">Selamat Datang <b><?php echo $a['nama']; ?></b></p>
+			<?php 
+			} 
+			?>
 			<hr>
 
 			<div class="row">

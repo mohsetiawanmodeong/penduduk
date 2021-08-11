@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dashboard - Sistem Informasi Pendataan Penduduk</title>
+	<title>Dashboard - SISPENDUK</title>
 
 	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/all.css">
 	<link href="../assets/css/bootstrap.css" type="text/css" rel="stylesheet">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sistem Informasi Pendataan Penduduk - Login</title>
+	<title>Login - SISPENDUK</title>
 
 	<link href="assets/css/bootstrap.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
@@ -13,8 +13,8 @@
 	<div class="container-fluid">
 		
 
-		<h1 class="text-center mt-5">Sistem Informasi Pendataan Penduduk</h1>
-		<h2 class="text-center mb-5">Halaman Login</h2>
+		<!-- <h1 class="text-center mt-5">Sistem Informasi Pendataan Penduduk</h1> -->
+		<h2 class="text-center" style="margin-top:150px;">Halaman Login</h2>
 
 
 		<div class="row">
@@ -47,12 +47,12 @@
 
 							<div class="form-group">
 								<label>Username</label>
-								<input type="text" name="uname" required="required" class="form-control" placeholder="Masukkan username ..">
+								<input type="text" name="uname" required="required" class="form-control" placeholder="Masukkan username ...">
 							</div>
 
 							<div class="form-group">
 								<label>Password</label>
-								<input type="password" name="pass" required="required" class="form-control" placeholder="Masukkan Password ..">
+								<input type="password" name="pass" required="required" class="form-control" placeholder="Masukkan Password ...">
 							</div>
 
 							<input type="submit" name="submit" value="Login" class="btn btn-primary btn-block mb-3">

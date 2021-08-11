@@ -4,19 +4,21 @@ include 'koneksi.php';
 
 session_start();
 
-$username = $_POST['uname'];
-$password = md5($_POST['pass']);
+$id = 'id';
+$name = 'nama';
+$username = htmlspecialchars($_POST['uname']);
+$password = htmlspecialchars(md5($_POST['pass']));
 
 
-$cek = mysqli_query($koneksi,"SELECT * FROM admin WHERE username='$username' and password='$password'");
+$sql = mysqli_query($koneksi,"SELECT * FROM admin WHERE username='$username' and password='$password'");
 
-$jumlah = mysqli_num_rows($cek);
+$cek = mysqli_num_rows($sql);
 
-if($jumlah > 0){
+if($cek > 0){
 	//jika login berhasil
 	$_SESSION['status'] = "berhasil";
 	header("location:admin/index.php");
-
+	//jika login gagal
 }else{
 	header("location:index.php?pesan=gagal");
 }

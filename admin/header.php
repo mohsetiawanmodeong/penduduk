@@ -30,13 +30,13 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li <?php if($page == "Dashboard") echo "class='nav-item active'";?>>
+					<li class="nav-item active">
 						<a class="nav-link" href="index.php"><i class="fa fa-home"></i> Dashboard</span></a>
 					</li>
-					<li <?php if($page == "Data Warga") echo "class='nav-item active'";?>>
+					<li class="nav-item active">
 						<a class="nav-link" href="warga.php"><i class="fa fa-users"></i> Data Warga</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown active">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fa fa-briefcase"></i> Master Data
 						</a>
@@ -45,7 +45,7 @@
 							<a class="dropdown-item" href="dusun.php">Data Dusun</a>
 						</div>
 					</li>
-					<li <?php if($page == "Ganti Password") echo "class='nav-item active'";?>>
+					<li class="nav-item active">
 						<a class="nav-link" href="ganti_password.php"><i class="fa fa-lock"></i> Ganti Password</a>
 					</li>
 				</ul>
